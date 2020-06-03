@@ -1,2 +1,2 @@
-<h1><?php the_title();?><h1>
+<h1 style="color:red"><?php the_title();?><h1>
 <div><?php the_content();?><div>
