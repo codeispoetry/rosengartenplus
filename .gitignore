@@ -4,6 +4,8 @@
 !.github/
 !.github/**/*
 
+!exclude-list.txt
+
 
 !wp-content/
 wp-content/*
