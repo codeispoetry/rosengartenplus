@@ -5,7 +5,7 @@ const {Builder, By, Key, until} = require('selenium-webdriver');
     let driver = await new Builder().forBrowser('chrome').build();
     try {
         await driver.get('https://sharepicgenerator.de/wordpress');
-        await driver.wait(until.titleIs('Sharepicgenerator'), 1000);
+        await driver.wait(until.titleIs('Titel'), 1000);
         console.log("passed");
     } catch( error ){
         const core = require('@actions/core');
