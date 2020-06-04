@@ -1,4 +1,6 @@
 wp-content/themes/rosengarten/node_modules
 wp-content/themes/rosengarten/build
 wp-content/themes/rosengarten/*.config.js
+wp-content/themes/rosengarten/package*.json
+.git*
 
