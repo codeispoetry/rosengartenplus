@@ -33,7 +33,7 @@ jobs:
           rsync -avhz -e "ssh -o StrictHostKeyChecking=no -i $HOME/deploy_key" --exclude-from 'exclude-list.txt' . tom@93.90.202.66:/var/www/html/wordpress
   test:
     runs-on: ubuntu-latest
-    needs: build
+    needs: deploy
 
     services:
       hub:
