@@ -6,6 +6,9 @@
 
 !exclude-list.txt
 
+!tests/
+!tests/*
+
 
 !wp-content/
 wp-content/*
