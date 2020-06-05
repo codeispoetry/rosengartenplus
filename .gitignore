@@ -4,7 +4,7 @@
 !.github/
 !.github/**/*
 
-!exclude-list.txt
+!rsync-exclude-list.txt
 
 !tests/
 !tests/*
