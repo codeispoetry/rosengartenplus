@@ -9,7 +9,7 @@ module.exports = (env = {}) => {
         devtool: (isDevelopment) ? 'source-map' : false,
         entry:[  path.resolve(__dirname, 'build/scss/main.scss') ],
         output: {
-            filename: 'js/main.min.js',
+            filename: 'main.min.js',
             path:  path.resolve(__dirname,"dist/"),
             sourceMapFilename: '[file].map'
         },
@@ -29,7 +29,7 @@ module.exports = (env = {}) => {
                         {
                             loader: 'file-loader',
                             options: {
-                                name: 'css/styles.css',
+                                name: 'styles.css',
                                 outputPath: './',
                                 sourceMap: true,
                             }
