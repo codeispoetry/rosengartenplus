@@ -30,7 +30,7 @@ jobs:
           chmod 600 "$HOME/deploy_key"
       - name: rsync files
         run: |
-          rsync -avhz -e "ssh -o StrictHostKeyChecking=no -i $HOME/deploy_key" --exclude-from 'exclude-list.txt' . tom@93.90.202.66:/var/www/html/wordpress
+          rsync -avhz -e "ssh -o StrictHostKeyChecking=no -i $HOME/deploy_key" --exclude-from 'rsync-exclude-list.txt' . tom@93.90.202.66:/var/www/html/wordpress
   test:
     runs-on: ubuntu-latest
     needs: deploy
